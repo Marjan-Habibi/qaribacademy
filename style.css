@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    direction: rtl;
+  }
+
+  .english-section {
+    background: #E65100;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .english-section:hover {
+    transform: translateY(-5px);
+  }
+
+  .english-section h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+
+  .skill-section {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-section:hover {
+    transform: translateY(-5px);
+  }
+
+  .skill-section h2 {
+    text-align: center;
+    color: #E65100;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .features-list li {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: color 0.3s ease;
+  }
+
+  .features-list li:last-child {
+    border-bottom: none;
+  }
+
+  .features-list li i {
+    color: white;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+  }
+
+  .features-list li:hover i {
+    transform: scale(1.3) rotate(10deg);
+    color: white;
+  }
+
+  .cta-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .cta-button a {
+    position: relative;
+    display: inline-block;
+    background: white;
+    color: #E65100;
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(72, 166, 167, 0.3);
+    text-decoration: none;
+  }
+
+  .cta-button a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .cta-button a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cta-button a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(47, 126, 126, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .english-section {
+      padding: 30px 20px;
+    }
+
+    .english-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .fav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .fav-list li {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(109, 106, 106);
+    transition: color 0.3s ease;
+  }
+
+  .fav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .fav-list li i {
+    color: #E65100;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+  }
+
+  .fav-list li:hover i {
+    transform: scale(1.3) rotate(10deg);
+    color: black;
+  }
+/* button */
+  .fav-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .fav-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .fav-button a {
+    position: relative;
+    display: inline-block;
+    background: #E65100;
+    color: white;
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(72, 166, 167, 0.3);
+    text-decoration: none;
+  }
+
+  .cta-button a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .cta-button a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cta-button a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(47, 126, 126, 0.4);
+  }
+  /* footer */
+  .footer {
+    background-color: #E65100;
+    color: black;
+    padding: 40px 20px 20px;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-about p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: black;
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .social-icons a {
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    color: black;
+  }
+  .footer-contact p {
+    /* جهت کلی پاراگراف هنوز rtl باشد */
+    direction: rtl;
+  }
+  
+  .footer-contact p .contact-number {
+    direction: ltr;
+    unicode-bidi: embed;  /* برای تضمین ترتیب صحیح زیرفسمت */
+  }
+  
+  /* teacher section */
+  /* ====== Base Styles ====== */
+.teachers-section {
+  background-color: #f8f8f8;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: 'Tahoma', sans-serif;
+  margin-bottom: 60px; /* فاصله از فوتر */
+}
+
+.teachers-section h2 {
+  color: #E65100;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ====== Grid Container ====== */
+.teacher-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Card Base ====== */
+.teacher-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.2; /* نسبت ابعاد ثابت */
+  perspective: 800px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Front & Back */
+.teacher-card .front,
+.teacher-card .back {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px #E65100;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease, z-index 0s linear 0.6s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* جلو کارت */
+.teacher-card .front img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.teacher-card .front h3 {
+  color: #E65100;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+.teacher-card .front p {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 4px 0;
+}
+.teacher-card .front .social-icons {
+  margin-top: 12px;
+}
+.teacher-card .front .social-icons a {
+  color: #E65100;
+  margin: 0 5px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.teacher-card .front .social-icons a:hover {
+  color: #333;
+}
+
+/* پشت کارت */
+.teacher-card .back {
+  transform: rotateY(180deg);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+  transition-delay: 0s; /* بی‌درنگ */
+}
+
+/* افکت Flip */
+.teacher-card.flipped .front {
+  transform: rotateY(180deg);
+  z-index: 1;
+  transition-delay: 0s;
+}
+.teacher-card.flipped .back {
+  transform: rotateY(0deg);
+  z-index: 2;
+  /* transition-delay: 0.6s; */
+}
+
+/* ====== Responsive Tweaks ====== */
+/* تبلت و پایین‌تر */
+@media (max-width: 900px) {
+  .teachers-section h2 {
+    font-size: 1.8rem;
+  }
+  .teacher-card .front h3 { font-size: 1rem; }
+  .teacher-card .front p,
+  .teacher-card .back {
+    font-size: 0.85rem;
+  }
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  .teachers-section {
+    padding: 40px 10px;
+  }
+  .teacher-cards {
+    gap: 20px;
+  }
+  .teachers-section h2 {
+    font-size: 1.6rem;
+  }
+  .teacher-card .front img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .teacher-card .front h3 { font-size: 0.95rem; }
+  .teacher-card .front p,
+  .teacher-card .back { font-size: 0.8rem; }
+}
+
+/* CSS */
+.mail-link {
+  color: #000;              /* رنگ متن و آیکون */
+  text-decoration: none;    /* حذف زیرخط در صورت وجود */
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;                 /* فاصلهٔ کمی بین آیکون و متن */
+}
+
+.mail-link i {
+  font-size: 1.2rem;        /* اندازه آیکون اگر خواستی */
+}
+
+.mail-link:hover {
+  opacity: 0.8;             /* افکت کوچک روی هاور */
+}
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,2 @@
+# qaribacademy
+qaribacademy
